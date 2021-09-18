@@ -77,3 +77,18 @@ span {
   border : 1px solid #EBD2DA;
   box-shadow: 6px 6px 5px #393434;
 }
+
+.active-turner:hover {
+  transition : all 0.5s ease-in-out;
+  background : #EE5180;
+}
+
+.text-field {
+  background : #EBD2DA;
+  color : #B59797;
+  border-radius: 6px;
+  box-shadow: 6px 6px 5px #393434;
+  outline : none;
+  font-family: 'Raleway', sans-serif;
+  @apply px-3;
+}

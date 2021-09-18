@@ -19,12 +19,21 @@
             <img src='../static/ellipse.png' class='pnr-quest' @click='pnrShow = true'>
           </div>
         </div>
-        <br>
         <div v-show='pnrShow' style='border : 1px solid #EBD2DA; border-radius: 10px; width : 420px'>
           <span>
             PNR - запись в базе данных компьютерной системы бронирования о маршруте пассажира, находящаяся на посадочном талоне
           </span>
         </div>
+
+        <br>
+        <input placeholder="Ваш PNR" class='text-field' style = 'width : 380px; height : 60px;' type = 'tel'/>
+
+        <br><br>
+
+        <nuxt-link to ='/' style = 'position:relative; float : right; right : 80px'>
+          <span class = 'active-turner px-4 py-2'>Далее</span>
+        </nuxt-link>
+
       </div>
     </center>
   </div>
