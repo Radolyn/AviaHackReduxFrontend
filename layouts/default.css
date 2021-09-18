@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:wght@300&family=Raleway:wght@300&family=Roboto:wght@300;500&display=swap');
+span {
+  vertical-align: middle;
+  font-weight: 800;
+  font-family: 'Raleway', sans-serif;
+}
+
+.navbar {
+  width : 100%;
+  height: 75px;
+  background: #403939;
+  box-shadow: 0 8px 5px #574D4D;
+}
+
+.nav-burger {
+  position: relative;
+  float: right;
+  margin-right: 30px;
+  top: 28px;
+}
+
+.footerItem {
+
+}
+
+.footerItem:hover {
+  transition: all 0.5s ease-in-out;
+  transform: translate(0,-10px);
+  -webkit-transform: translate(0,-10px);
+  -o-transform: translate(0,-10px);
+  -moz-transform: translate(0,-10px);
+}
+
+.burgerMenu {
+  z-index: 10;
+  position: absolute;
+  float: right;
+  top: 60px;
+  right: 10px;
+  background-color: #EBD2DA;
+  color: #403939;
+  padding: 4px;
+  width: 185px;
+  height: 130px;
+  text-align: center;
+  border-radius: 10px;
+  opacity: 80%;
+  /*box-shadow: 8px 8px 5px #574D4D;*/
+  @apply grid grid-rows-3 grid-cols-1;
+}
+
+.burgerMenuItem {
+  padding: 3px;
+}
+
+.burgerMenuItem:hover {
+  background : #EE5180;
+}
+
+.content {
+  min-height : 100vh;
+  margin : 0;
+  padding : 0;
+}
+
+.avia-footer {
+  position : relative;
+  margin-bottom : -140px;
+  width: 100%;
+  height: 140px;
+  background: #403939;
+  @apply grid md:grid-cols-11 sm:grid-cols-3 justify-items-center;
+}
+
+.active-turner {
+  border-radius : 7px;
+  border : 1px solid #EBD2DA;
+  box-shadow: 6px 6px 5px #393434;
+}
