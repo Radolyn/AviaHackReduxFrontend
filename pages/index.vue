@@ -2,5 +2,12 @@
 </template>
 
 <script>
-export default {}
+export default {
+  data(){
+    return {}
+  },
+  mounted() {
+    this.$router.replace('cellphone');
+  }
+}
 </script>

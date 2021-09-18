@@ -7,7 +7,7 @@
       </button>
 
       <div class='burgerMenu' v-show=burgerShow>
-        <nuxt-link to='/cellphone' style='border-bottom : 1px solid #B59797'
+        <nuxt-link to='/cellphone' style='border-bottom : 1px solid #B59797;'
                    class='burgerMenuItem'>
           <div class='row-start-1'>
             <span>Авторизация</span>
@@ -32,6 +32,8 @@
       <nuxt/>
     </div>
 
+
+    <br><br><br>
     <footer class='avia-footer' @click='burgerShow = false'>
       <div class='md:col-start-5 col-start-1'>
         <a>
@@ -71,7 +73,7 @@ export default {
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:wght@300&family=Raleway:wght@300&family=Roboto:wght@300;500&display=swap');
 
-html {
+body, html {
   background-color: #EE5180;
 }
 
@@ -82,6 +84,7 @@ span {
 }
 
 .navbar {
+  width : 100%;
   height: 75px;
   background: #403939;
   box-shadow: 0 8px 5px #574D4D;
@@ -95,6 +98,7 @@ span {
 }
 
 .burgerMenu {
+  z-index: 10;
   position: relative;
   float: right;
   top: 60px;
@@ -112,15 +116,22 @@ span {
 
 .burgerMenuItem {
   padding: 3px;
+  border-radius: 5px 5px;
+}
+
+.burgerMenuItem:hover {
+  background : #EE5180;
 }
 
 .content {
-  min-height: 80vh;
+  min-height : 100vh;
+  margin : 0;
+  padding : 0;
 }
 
 .avia-footer {
-  position: absolute;
-  bottom: 0;
+  position : relative;
+  margin-bottom : -140px;
   width: 100%;
   height: 140px;
   background: #403939;
