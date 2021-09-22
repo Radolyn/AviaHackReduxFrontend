@@ -36,7 +36,7 @@
 
         <br><br>
 
-        <div class='grid'>
+        <div class='grid' ref = 'questions'>
           <div class='row-start-1'><br></div>
           <div class='row-start-2'><br></div>
           <div class='row-start-3'><br></div>
@@ -73,6 +73,20 @@ export default {
       pnrShow: false
     }
   },
+  watch: {
+    pnrShow() {
+      let elements = this.$refs.questions
+
+      for (let i = 0; i < elements.childNodes.length; i++) {
+        elements.childNodes[i].innerHTML = '';
+
+        if (i >= 6) {
+          break
+        }
+      }
+
+    }
+  }
 }
 
 </script>
