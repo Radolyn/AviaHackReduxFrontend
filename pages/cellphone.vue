@@ -18,12 +18,37 @@
         </div>
 
         <br><br>
-        <input placeholder="Ваш номер телефона" class='text-field' style = 'width : 380px; height : 60px;' type = 'tel'/>
+        <input placeholder="Ваш номер телефона" class='text-field' type = 'tel'/>
         <br><br>
 
         <nuxt-link to ='/' style = 'position:relative; float : right; right : 80px'>
             <span class = 'active-turner px-4 py-2'>Далее</span>
         </nuxt-link>
+
+        <br><br>
+
+        <div class='grid'>
+          <div class='row-start-1'><br></div>
+          <div class='row-start-2'><br></div>
+          <div class='row-start-3'><br></div>
+          <div class='row-start-4'><br></div>
+          <div class=' row-start-5'><br></div>
+          <div class='row-start-6'><br></div>
+          <div class=' row-start-7'><br></div>
+          <div class='row-start-8'><br></div>
+          <div class='row-start-9'><br></div>
+          <div class='row-start-10'>
+             <span>
+              Есть вопросы?
+            </span>
+          </div>
+          <div class='row-start-11'>
+            <span class = 'active-turner px-2 py-1'>
+              helpdesk@radolyn.com
+            </span>
+          </div>
+
+        </div>
 
       </div>
     </center>

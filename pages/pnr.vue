@@ -4,15 +4,15 @@
       <div class='card'>
         <br>
         <div class='grid grid-cols-7'>
-          <nuxt-link to="/cellphone" class='col-start-3 row-start-2'>
+          <nuxt-link to="/cellphone" class='col-start-3'>
             <div>
               <span class='active-turner px-2 py-2'>Телефон</span>
             </div>
           </nuxt-link>
-          <div class='col-start-4 row-start-2'>
+          <div class='col-start-4'>
             <div style='width : 1px; height : 30px; background : #EBD2DA'></div>
           </div>
-          <div class='col-start-5 row-start-2'>
+          <div class='col-start-5'>
             <div>
               <span class='px-4 py-2'>PNR</span>
             </div>
@@ -26,13 +26,38 @@
         </div>
 
         <br>
-        <input placeholder="Ваш PNR" class='text-field' style = 'width : 380px; height : 60px;' type = 'tel'/>
+        <input placeholder="Ваш PNR" class='text-field' type='tel'/>
 
         <br><br>
 
-        <nuxt-link to ='/' style = 'position:relative; float : right; right : 80px'>
-          <span class = 'active-turner px-4 py-2'>Далее</span>
+        <nuxt-link to='/' style='position:relative; float : right; right : 80px'>
+          <span class='active-turner px-4 py-2'>Далее</span>
         </nuxt-link>
+
+        <br><br>
+
+        <div class='grid'>
+          <div class='row-start-1'><br></div>
+          <div class='row-start-2'><br></div>
+          <div class='row-start-3'><br></div>
+          <div class='row-start-4'><br></div>
+          <div class=' row-start-5'><br></div>
+          <div class='row-start-6'><br></div>
+          <div class=' row-start-7'><br></div>
+          <div class='row-start-8'><br></div>
+          <div class='row-start-9'><br></div>
+          <div class='row-start-10'>
+             <span>
+              Есть вопросы?
+            </span>
+          </div>
+          <div class='row-start-11'>
+            <span class = 'active-turner px-2 py-1'>
+              helpdesk@radolyn.com
+            </span>
+          </div>
+
+        </div>
 
       </div>
     </center>
