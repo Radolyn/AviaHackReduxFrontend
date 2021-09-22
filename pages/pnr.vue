@@ -26,7 +26,7 @@
         </div>
 
         <br>
-        <input placeholder="Ваш PNR" class='text-field' type='tel'/>
+        <input placeholder="Ваш PNR" class='text-field' ref='pnrTextField' type='tel' v-model='pnrValue'/>
 
         <br><br>
 
@@ -36,7 +36,7 @@
 
         <br><br>
 
-        <div class='grid' ref = 'questions'>
+        <div class='grid' ref='questions'>
           <div class='row-start-1'><br></div>
           <div class='row-start-2'><br></div>
           <div class='row-start-3'><br></div>
@@ -52,13 +52,11 @@
             </span>
           </div>
           <div class='row-start-11'>
-            <span class = 'active-turner px-2 py-1'>
+            <span class='active-turner px-2 py-1'>
               helpdesk@radolyn.com
             </span>
           </div>
-
         </div>
-
       </div>
     </center>
   </div>
@@ -66,12 +64,20 @@
 </template>
 
 <script>
+import IMask from "imask";
 
 export default {
   data() {
     return {
-      pnrShow: false
+      pnrShow: false,
+      pnrValue: ''
     }
+  },
+  mounted() {
+    const pnrMaskOption = {
+      mask: 'aaaa00'
+    }
+    IMask(this.$refs.pnrTextField, pnrMaskOption)
   },
   watch: {
     pnrShow() {
@@ -84,7 +90,9 @@ export default {
           break
         }
       }
-
+    },
+    pnrValue() {
+      this.pnrValue = this.pnrValue.toUpperCase()
     }
   }
 }

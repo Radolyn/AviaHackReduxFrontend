@@ -18,7 +18,7 @@
         </div>
 
         <br><br>
-        <input placeholder="Ваш номер телефона" class='text-field' type = 'tel'/>
+        <input placeholder="Ваш номер телефона" class='text-field' ref = 'cellPhoneTextField' type = 'tel'/>
         <br><br>
 
         <nuxt-link to ='/' style = 'position:relative; float : right; right : 80px'>
@@ -47,9 +47,7 @@
               helpdesk@radolyn.com
             </span>
           </div>
-
         </div>
-
       </div>
     </center>
   </div>
@@ -58,10 +56,18 @@
 
 <script>
 
+import IMask from "imask";
+
 export default {
   data() {
     return {}
   },
+  mounted() {
+    const textFieldMaskOptions = {
+      mask: '+{7}(000)000-00-00'
+    }
+    IMask(this.$refs.cellPhoneTextField, textFieldMaskOptions)
+  }
 }
 
 </script>
