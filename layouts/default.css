@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:wght@300&family=Raleway:wght@300&family=Roboto:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 span {
   vertical-align: middle;
   font-weight: 800;
@@ -76,11 +78,32 @@ span {
   border-radius : 7px;
   border : 1px solid #EBD2DA;
   box-shadow: 6px 6px 5px #393434;
+  color : #EBD2DA;
+  font-family: Raleway, sans-serif;
+  font-size: 17px;
+  font-weight: 500;
 }
 
 .active-turner:hover {
   transition : all 0.5s ease-in-out;
   background : #EE5180;
+  cursor: pointer;
+}
+
+.card {
+  position: relative;
+  top: 40px;
+  background-color: #403939;
+  height: 520px;
+  max-width: 540px;
+  border-radius: 10px;
+  box-shadow: 8px 8px 5px #574D4D;
+}
+
+.card span {
+  font-weight: 500 !important;
+  color: #EBD2DA;
+  font-size: 17px;
 }
 
 .text-field {
@@ -94,3 +117,77 @@ span {
   font-family: Arial, sans-serif;
   @apply px-3;
 }
+
+.service-text-field {
+  border-radius: 30px;
+  background-color: #EBD2DA;
+  outline: none;
+  color: #B59797;
+  height: 50px;
+  width: 350px;
+  box-shadow: 2px 2px 5px #393434;
+  font-family: 'Raleway', sans-serif;
+}
+
+.service-container {
+  width : 350px;
+}
+
+@media (min-width: 768px)
+{
+  .service-text-field {
+    width: 700px;
+  }
+  .service-container {
+    width : 700px;
+  }
+}
+
+.search-zoom {
+  position: relative;
+  float: right;
+  bottom: 37px;
+  right: 13px;
+  cursor: pointer;
+}
+
+.service-card {
+  background-color : #EBD2DA;
+  border-radius: 10px 10px 0 0;
+  min-height : 500px;
+  @apply px-4 py-2;
+}
+
+.service-card-item {
+  background-color : #403939;
+  border-radius: 10px;
+  height : 55px;
+  width : 100%;
+  box-shadow: 7px 7px 7px #C9BABF;
+  @apply py-3 px-4;
+}
+
+.service-card-item span {
+  color : #EBD2DA;
+  text-transform: uppercase;
+  font-family: 'Roboto-Light', sans-serif;
+  font-weight : normal;
+  font-size : 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px #393434;
+  @apply py-1 px-4;
+}
+
+.service-card-item span:hover {
+  cursor: pointer;
+  background : #403939;
+}
+
+.service-card-footer {
+  height : 50px;
+  border-radius: 0 0 10px 10px;
+  background-color : #403939;
+  @apply py-3;
+}
+
+

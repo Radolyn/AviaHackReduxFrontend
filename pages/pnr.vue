@@ -74,6 +74,8 @@ export default {
     }
   },
   mounted() {
+    this.$refs.pnrTextField.focus()
+
     const pnrMaskOption = {
       mask: 'aaaa00'
     }
@@ -99,7 +101,6 @@ export default {
 
 </script>
 
-<style src='../layouts/default.css'></style>
 <style>
 
 .pnr-quest {
@@ -108,22 +109,6 @@ export default {
   bottom: 24px;
   float: right;
   cursor: pointer;
-}
-
-.card {
-  position: relative;
-  top: 40px;
-  background-color: #403939;
-  height: 520px;
-  max-width: 540px;
-  border-radius: 10px;
-  box-shadow: 8px 8px 5px #574D4D;
-}
-
-.card span {
-  font-weight: 500 !important;
-  color: #EBD2DA;
-  font-size: 17px;
 }
 
 </style>
