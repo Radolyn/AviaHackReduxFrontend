@@ -152,7 +152,11 @@ span {
 }
 
 .service-card {
-  background-color : #EBD2DA;
+  /*background: linear-gradient(145deg, #ff5789, #d64973);*/
+  /*background: linear-gradient(145deg, #fbe1e9, #d4bdc4);*/
+  background: linear-gradient(145deg, #443d3d, #3a3333);
+  box-shadow:  19px 19px 67px #983452,
+  -19px -19px 67px #ff6eae;
   border-radius: 10px 10px 0 0;
   min-height : 500px;
   @apply px-4 py-2;
@@ -161,10 +165,10 @@ span {
 .service-card-item {
   background-color : #403939;
   border-radius: 10px;
-  height : 55px;
+  height : 50px;
   width : 100%;
-  box-shadow: 7px 7px 7px #C9BABF;
-  @apply py-3 px-4;
+  /*box-shadow: 7px 7px 7px #C9BABF;*/
+  @apply py-2.5 px-4;
 }
 
 .service-card-item span {
@@ -172,7 +176,7 @@ span {
   text-transform: uppercase;
   font-family: 'Roboto-Light', sans-serif;
   font-weight : normal;
-  font-size : 20px;
+  font-size : 15px;
   border-radius: 10px;
   box-shadow: 2px 2px 5px #393434;
   @apply py-1 px-4;

@@ -10,9 +10,9 @@
     </center>
 
     <div class='service-card'>
-      <div class='service-card-item hvr-bubble-left'>
+      <div class='service-card-item hvr-bubble-left' v-for ='service in services.templates' :key = service.id>
             <span class='active-turner'>
-              Сдать анализ на COVID-19
+              {{ service.name }}
             </span>
       </div>
     </div>
@@ -33,15 +33,25 @@
 export default {
   data() {
     return {
-      searchValue: ''
+      searchValue: '',
+      services : []
     }
   },
   mounted() {
     this.$refs.serviceTextField.focus()
+    this.fetchServices()
   },
   methods: {
     search() {
       // something actions width this.searchValue
+    },
+    async fetchServices() {
+      this.services = await this.$axios.$get('https://rd-api.loca.lt/service')
+
+      for (let elem of this.services.templates) {
+        console.log(elem.name)
+      }
+
     }
   }
 }
