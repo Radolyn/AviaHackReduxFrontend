@@ -22,15 +22,18 @@ span {
 }
 
 .footerItem {
-
+  transition: .5s;
 }
 
 .footerItem:hover {
-  transition: all 0.5s ease-in-out;
+  transition: all .5s ease-in-out;
   transform: translate(0,-10px);
   -webkit-transform: translate(0,-10px);
   -o-transform: translate(0,-10px);
   -moz-transform: translate(0,-10px);
+  -webkit-transition: .5s ease; /* Safari and Chrome */
+  -moz-transition: .5s ease; /* Firefox 4 */
+  -o-transition: .5s ease; /* Opera */
 }
 
 .burgerMenu {
@@ -46,7 +49,7 @@ span {
   height: 130px;
   text-align: center;
   border-radius: 10px;
-  opacity: 80%;
+  opacity: .8;
   /*box-shadow: 8px 8px 5px #574D4D;*/
   @apply grid grid-rows-3 grid-cols-1;
 }
@@ -194,4 +197,11 @@ span {
   @apply py-3;
 }
 
+.gear {
+  transition: 1s;
+}
 
+.gear:hover {
+  transition: all 1s ease-in-out;
+  transform: rotate(-360deg);
+}

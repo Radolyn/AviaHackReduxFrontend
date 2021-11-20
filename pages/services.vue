@@ -46,7 +46,8 @@ export default {
       // something actions width this.searchValue
     },
     async fetchServices() {
-      this.services = await this.$axios.$get('https://rd-api.loca.lt/service')
+      // this.services = await this.$axios.$get('https://rd-api.loca.lt/service')
+      this.services = await this.$axios.$get('http://127.0.0.1:5000/api/services')
 
       for (let elem of this.services.templates) {
         console.log(elem.name)
