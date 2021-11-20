@@ -36,19 +36,19 @@
     <br><br><br>
     <footer class='avia-footer' @click='burgerShow = false'>
       <div class='md:col-start-5 col-start-1 footerItem'>
-        <a>
+        <a href = 'https://t.me/radolyn_services'>
           <img src='../static/telegram.png' style='position : relative; top : 45px; left : 5px'>
         </a>
       </div>
 
       <div class='md:col-start-6 col-start-2 footerItem'>
-        <a>
+        <a href = 'https://radolyn.com/'>
           <img src='../static/radolyn_vector1.png' style='position : relative; top : 20px; left : 5px'>
         </a>
       </div>
 
       <div class='md:col-start-7 col-start-3 footerItem'>
-        <a>
+        <a href = 'https://github.com/Radolyn'>
           <img src='../static/github.png' style='position : relative; top : 45px; left : 5px'>
         </a>
       </div>
